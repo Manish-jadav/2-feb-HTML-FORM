@@ -14,10 +14,23 @@
         {
             width: 182px;
         }
+        button
+        {
+            width:100px;
+            height: 30px;
+            transition-property: width;
+            transition-duration: 10s;
+            transition-timing-function: linear;
+            transition-delay: 10s;
+        }
+        button:hover{
+            width:300px;
+            transform: rotate(90deg);
+        }
         </style>
     </head>
     <body>
-        <form method="first.html">
+        <form action="info.html" metho="POST">
             <table border="0" bgcolor="skyblue" rules="none" id="table" width="300px">
                 <tr style="font-size:35px">
                     <td align="center" colspan="2">Student Information</td>
@@ -43,16 +56,21 @@
                 <td><textarea rows="2"></textarea></td>
             </tr>
             <tr> 
+                <td>Date of Birth :</td>
+                <td><input type="date" style="width: 180px;"></td>
+            </tr>
+            <tr> 
                 <td>Course :</td>
                 <td>
                     <select class="width">
                         <option value="BCA">BCA</option>
-                        <option value="B.Com">MCA</option>
+                        <option value="MCA">MCA</option>
                         <option value="B.Com">B.com</option>
-                        <option value="B.Com">M.Com</option>
-                        <option value="B.Com">B.Sc</option>
-                        <option value="B.Com">M.Sc</option>
-                        <option value="B.Com">B.Ed</option>
+                        <option value="M.Com">M.Com</option>
+                        <option value="B.Sc">B.Sc</option>
+                        <option value="M.Sc">M.Sc</option>
+                        <option value="B.Ed">B.Ed</option>
+                        <option value="M.Ed">M.Ed</option>
                     </select>
                 </td>
             </tr>
@@ -76,8 +94,9 @@
             </tr>
             <tr>
                 <td align="center" colspan="2" >
-                <input type="submit" value="Submit" style="background-color:black;color:white">
-                 <input type="reset" value="Reset" style="background-color:black;color:white"></td>
+                <Button value="Submit" style="background-color:black;color:white">Submit</Button>
+                 <input type="reset" value="Reset" style="background-color:black;color:white;">
+                </td>
             </table>
         </form>    
     </body>
